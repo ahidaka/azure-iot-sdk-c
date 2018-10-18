@@ -74,4 +74,3 @@ TEST_FUNCTION(IoTHub_AMQP_WS_GetFullDesired_e2e_x509)
 #endif
 
 END_TEST_SUITE(iothubclient_amqp_dt_e2e)
-
