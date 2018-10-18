@@ -48,6 +48,7 @@ custom_hsm_lib=$hsm_folder"/libcustom_hsm_example.a"
 declare -a arr=(
     "-Duse_http=OFF"
     "-Duse_amqp=OFF -Duse_http=OFF -Dno_logging=OFF -Ddont_use_uploadtoblob=ON"
+    "-Duse_mqtt=OFF"
     "-Duse_prov_client=ON -Dbuild_provisioning_service_client=OFF"
     "-Dbuild_as_dynamic=ON"
     "-Dbuild_as_dynamic:BOOL=ON -Ddont_use_uploadtoblob:BOOL=ON"

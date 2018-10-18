@@ -7,6 +7,8 @@ cat /etc/*release | grep VERSION*
 gcc --version
 curl --version
 
+set -e
+
 build_root=$(cd "$(dirname "$0")/.." && pwd)
 cd $build_root
 
@@ -21,6 +23,6 @@ pushd $build_folder
 cmake $build_root -Drun_e2e_tests:BOOL=ON -Duse_wolfssl:BOOL=ON
 make --jobs=$CORES
 
-ctest -j $CORES -VV --output-on-failure
+ctest -j $CORES -V --output-on-failure
 
 popd
