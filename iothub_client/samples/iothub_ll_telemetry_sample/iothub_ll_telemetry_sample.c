@@ -26,11 +26,17 @@ and removing calls to _DoWork will yield the same results. */
 
 // The protocol you wish to use should be uncommented
 //
-#define SAMPLE_MQTT
-//#define SAMPLE_MQTT_OVER_WEBSOCKETS
-//#define SAMPLE_AMQP
-//#define SAMPLE_AMQP_OVER_WEBSOCKETS
-//#define SAMPLE_HTTP
+#ifdef USE_MQTT
+    #define SAMPLE_MQTT
+    //#define SAMPLE_MQTT_OVER_WEBSOCKETS
+#endif
+#ifdef USE_AMQP
+    //#define SAMPLE_AMQP
+    //#define SAMPLE_AMQP_OVER_WEBSOCKETS
+#endif
+#ifdef USE_HTTP
+    //#define SAMPLE_HTTP
+#endif
 
 #ifdef SAMPLE_MQTT
     #include "iothubtransportmqtt.h"
