@@ -1,5 +1,7 @@
 # Azure IoT C SDKs and Libraries
 
+## **ahidaka** special contents is [**here**](https://github.com/ahidaka/azure-iot-sdk-c/tree/registrymanager_sample/iothub_service_client/samples/iothub_registrymanager_sample)!
+
 [![Build Status](https://azure-iot-sdks.visualstudio.com/azure-iot-sdks/_apis/build/status/c/integrate-into-repo-C)](https://azure-iot-sdks.visualstudio.com/azure-iot-sdks/_build/latest?definitionId=85)
 
 This repository contains the following:

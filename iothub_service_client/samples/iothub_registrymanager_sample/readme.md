@@ -14,6 +14,16 @@ This sample is useful for using the management function of IoT Hub from Lightwei
 
 See the [document][up-link] of ``How to compile and run the samples`` for ``Samples for the Azure IoT service SDK for C``.
 
+Note that you have to use the clone command
+```
+git clone --recursive https://github.com/ahidaka/azure-iot-sdk-c.git
+```
+instead of 
+```
+git clone -b <yyyy-mm-dd> --recursive https://github.com/Azure/azure-iot-sdk-c.git
+```
+
+
 ## How to run the sample on Linux or Windows
 <a name="Run"/>
 
@@ -60,6 +70,8 @@ $ iothub_registrymanager_sample create -l "HostName=<my-hub>.azure-devices.net;S
 
 The status of [IoTHubRegistryManager_GetDeviceList][IoTHubRegistryManager_GetDeviceList-link] API for `list` command
 is under deprecated. You can disable to use this with uncomment `#define USE_DEPRECATED 1` on source code and rebuild. There is a limitation this API can handle only up to 1000 lists. 
+
+<a name="Notes"/>
 
 [root-link]: https://github.com/Azure/azure-iot-sdk-c
 [source-code-link]: ../../src
